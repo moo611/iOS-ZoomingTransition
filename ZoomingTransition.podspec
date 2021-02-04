@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZoomingTransition'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZoomingTransition.'
+  s.version          = '1.0.0'
+  s.summary          = 'easy to achieve zooming transition'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lnpjjds@gmail.com/ZoomingTransition'
+  s.homepage         = 'https://github.com/moo611/iOS-ZoomingTransition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lnpjjds@gmail.com' => 'jindesong36@gmail.com' }
-  s.source           = { :git => 'https://github.com/lnpjjds@gmail.com/ZoomingTransition.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/moo611/iOS-ZoomingTransition.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZoomingTransition/Classes/**/*'
   

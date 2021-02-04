@@ -1,0 +1,23 @@
+PODS:
+  - SnapKit (4.2.0)
+  - ZoomingTransition (0.1.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - ZoomingTransition (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  ZoomingTransition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  ZoomingTransition: 929de70f4771c14fa1bfb170a249f61e497dadb9
+
+PODFILE CHECKSUM: 7a2d4ca95844bd4f2bb83fa6863cc0c0146c75d8
+
+COCOAPODS: 1.10.1

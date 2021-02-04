@@ -1,0 +1,22 @@
+{
+  "name": "ZoomingTransition",
+  "version": "0.1.0",
+  "summary": "A short description of ZoomingTransition.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lnpjjds@gmail.com/ZoomingTransition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lnpjjds@gmail.com": "jindesong36@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lnpjjds@gmail.com/ZoomingTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ZoomingTransition/Classes/**/*"
+}

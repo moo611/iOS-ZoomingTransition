@@ -4,7 +4,7 @@ platform :ios, '9.0'
 
 target 'ZoomingTransition_Example' do
   pod 'ZoomingTransition', :path => '../'
-
+  pod 'SnapKit'
   target 'ZoomingTransition_Tests' do
     inherit! :search_paths
 

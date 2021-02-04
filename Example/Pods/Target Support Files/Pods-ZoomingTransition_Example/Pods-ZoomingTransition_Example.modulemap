@@ -1,0 +1,6 @@
+framework module Pods_ZoomingTransition_Example {
+  umbrella header "Pods-ZoomingTransition_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
