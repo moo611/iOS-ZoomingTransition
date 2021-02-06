@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		224E9A6325CBEA4900E33034 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E9A6225CBEA4900E33034 /* CustomCell.swift */; };
 		224E9A7325CBEC2A00E33034 /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E9A7225CBEC2900E33034 /* PreviewVC.swift */; };
+		224E9A9925CE491800E33034 /* example.gif in Resources */ = {isa = PBXBuildFile; fileRef = 224E9A9825CE491800E33034 /* example.gif */; };
 		4206CB7BD6B8B1910C9A60A0 /* Pods_ZoomingTransition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D478757D507F4D8F1F0352 /* Pods_ZoomingTransition_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		224E9A6225CBEA4900E33034 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		224E9A7225CBEC2900E33034 /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
+		224E9A9825CE491800E33034 /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = example.gif; path = ../example.gif; sourceTree = "<group>"; };
 		4173BD139943C963F9AD7C84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		583EFE9F4EC6ED61A280B0ED /* Pods-ZoomingTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomingTransition_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZoomingTransition_Tests/Pods-ZoomingTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZoomingTransition_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingTransition_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				224E9A9825CE491800E33034 /* example.gif */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for ZoomingTransition */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -258,6 +261,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				224E9A9925CE491800E33034 /* example.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

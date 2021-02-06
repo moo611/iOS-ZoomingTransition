@@ -7,22 +7,119 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![生成mp4](https://github.com/moo611/OpenCamera/blob/master/images/tu3.gif "生成mp4")
 
 ## Requirements
+ios 10.0  , swift 5.0
+## How to use
 
-## Installation
-
-ZoomingTransition is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
+#### 1. pod install
 ```ruby
 pod 'ZoomingTransition'
 ```
+#### 2. make your custom VC extends ZoomPushVC as a "PushVC",and then implement 
+ZoomTransitionAnimatorDelegate
+```swift
 
+class MyPushVC : ZoomPushVC,ZoomTransitionAnimatorDelegate{
+
+var lastSelectedIndexPath: IndexPath? = nil
+
+//your own code...
+
+
+func transitionWillStart() {
+    guard let lastSelected = self.lastSelectedIndexPath else { return }
+    self.collectionView.cellForItem(at: lastSelected)?.isHidden = true
+}
+
+func transitionDidEnd() {
+    guard let lastSelected = self.lastSelectedIndexPath else { return }
+    self.collectionView.cellForItem(at: lastSelected)?.isHidden = false
+}
+
+func referenceImage() -> UIImage? {
+    guard
+        let lastSelected = self.lastSelectedIndexPath,
+        let cell = self.collectionView.cellForItem(at: lastSelected) as? CustomCell
+    else {
+        return nil
+    }
+
+    return cell.imageView.image
+}
+
+func imageFrame() -> CGRect? {
+    guard
+        let lastSelected = self.lastSelectedIndexPath,
+        let cell = self.collectionView.cellForItem(at: lastSelected) as? CustomCell
+    
+    else {
+        return nil
+    }
+    
+    return FrameHelper.getTargerFrame(originalView: cell.imageView, targetView: self.view)
+
+
+
+}
+     
+}
+
+```
+#### 3.record the lastSelectedIndexPath when click the item of collectionview
+
+```swift
+
+class MyPushVC : ZoomPushVC,ZoomTransitionAnimatorDelegate{
+
+//with the code above ...
+
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+    self.lastSelectedIndexPath = indexPath
+    let vc = PreviewVC()
+    vc.image = self.slices[indexPath.row]
+    self.navigationController?.pushViewController(vc, animated: true)
+    
+}
+
+}
+
+```
+#### 4.make your customVC as a "PopVC", and also implement 
+ZoomTransitionAnimatorDelegate
+
+```swift
+class PreviewVC: ZoomTransitionAnimatorDelegate{
+
+
+func transitionWillStart() {
+   // self.imageView.isHidden = true
+    self.view.alpha = 0
+}
+
+func transitionDidEnd() {
+  //  self.imageView.isHidden = true
+    self.view.alpha = 1
+}
+
+func referenceImage() -> UIImage? {
+    return FrameHelper.getScreenshot(with: self.view)
+}
+
+func imageFrame() -> CGRect? {
+   
+    return self.view.frame
+}
+}
+
+```
+
+That's it !  
 ## Author
 
- jindesong36@gmail.com
+Desong
 
 ## License
 
