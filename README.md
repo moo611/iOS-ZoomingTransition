@@ -13,12 +13,11 @@
 ios 10.0  , swift 5.0
 ## How to use
 
-#### 1. pod install
+#### 1. Pod install
 ```ruby
 pod 'ZoomingTransition'
 ```
-#### 2. make your custom VC extends ZoomPushVC as a "PushVC",and then implement 
-ZoomTransitionAnimatorDelegate
+#### 2. To make your  viewcontroller as a "PushVC", just extends ZoomPushVC ,and implement ZoomTransitionAnimatorDelegate
 ```swift
 
 class MyPushVC : ZoomPushVC,ZoomTransitionAnimatorDelegate{
@@ -67,7 +66,7 @@ func imageFrame() -> CGRect? {
 }
 
 ```
-#### 3.record the lastSelectedIndexPath when click the item of collectionview
+#### 3. Record the lastSelectedIndexPath when click the item of collectionview
 
 ```swift
 
@@ -87,11 +86,10 @@ func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPat
 }
 
 ```
-#### 4.make your customVC as a "PopVC", and also implement 
-ZoomTransitionAnimatorDelegate
+#### 4. To make your viewcontroller as a "PopVC",  just implement ZoomTransitionAnimatorDelegate
 
 ```swift
-class PreviewVC: ZoomTransitionAnimatorDelegate{
+class PreviewVC: UIViewController,ZoomTransitionAnimatorDelegate{
 
 
 func transitionWillStart() {
@@ -116,10 +114,11 @@ func imageFrame() -> CGRect? {
 
 ```
 
-That's it !  
+That's it !  Then you will see the fantastic zooming transition :)
 ## Author
 
 Desong
+
 
 ## License
 
