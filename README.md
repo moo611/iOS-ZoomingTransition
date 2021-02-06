@@ -7,7 +7,7 @@
 
 ## Example
 
-![生成mp4](https://github.com/moo611/OpenCamera/blob/master/images/tu3.gif "生成mp4")
+![example](https://github.com/moo611/iOS-ZoomingTransition/blob/main/example.gif "example")
 
 ## Requirements
 ios 10.0  , swift 5.0
