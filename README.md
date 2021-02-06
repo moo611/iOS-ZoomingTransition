@@ -91,6 +91,14 @@ func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPat
 ```swift
 class PreviewVC: UIViewController,ZoomTransitionAnimatorDelegate{
 
+//...your own code
+
+//when back button clicked
+@objc func close(){
+    
+    self.navigationController?.popViewController(animated: true)
+   
+}
 
 func transitionWillStart() {
    // self.imageView.isHidden = true
