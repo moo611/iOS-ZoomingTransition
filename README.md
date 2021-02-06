@@ -22,7 +22,7 @@ pod 'ZoomingTransition'
 
 ## Author
 
-lnpjjds@gmail.com, jindesong36@gmail.com
+ jindesong36@gmail.com
 
 ## License
 

@@ -35,7 +35,7 @@ class ViewController: ZoomingPushVC,UICollectionViewDelegate,UICollectionViewDat
     }
    
     fileprivate var lastSelectedIndexPath: IndexPath? = nil
-    fileprivate var currentAnimationTransition: UIViewControllerAnimatedTransitioning? = nil
+    
     var collectionView:UICollectionView!
     var slices = [UIImage]()
     
